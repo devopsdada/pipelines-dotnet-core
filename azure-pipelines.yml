@@ -20,7 +20,7 @@ jobs:
 
 
 - job: mainjob
-  dependsOn: pre-approval
+  dependsOn: preapproval
   steps:
   - script: echo hello
   displayName: Run a one-line script
