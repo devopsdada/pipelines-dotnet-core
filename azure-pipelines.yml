@@ -10,7 +10,7 @@ pool:
   vmImage: ubuntu-latest
 
 jobs:
-- job: pre-approval
+- job: preapproval
   pool: server
   steps:
   - task: ManualValidation@0
@@ -19,7 +19,7 @@ jobs:
       instructions: 'Please approve or reject'
 
 
-- job: main_job
+- job: mainjob
   dependsOn: pre-approval
   steps:
   - script: echo hello
